@@ -305,15 +305,15 @@
             "next": "confirm",
             "dgts": 6,
             "method": null,
-            "timeout": 40
+            "timeout": 99
         },
         "gather1": {
             "audio": "http://127.0.0.1:8000/admin-panel/",
-            "next": "confirm",
+            "next": "completed",
             "dgts": 0,
             "finishOnKey": "#",
             "method": null,
-            "timeout": 40
+            "timeout": 99
         },
         "confirm": {
             "audio": "http://127.0.0.1:8000/admin-panel/",
