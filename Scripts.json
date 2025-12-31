@@ -286,7 +286,7 @@
         },
         "completed": {
             "audio": "http://127.0.0.1:8000/admin-panel/",
-            "next": "gather1",
+            "next": null,
             "dgts": 0,
             "method": null,
             "timeout": 0
@@ -328,7 +328,7 @@
         },
         "completed": {
             "audio": "http://127.0.0.1:8000/admin-panel/",
-            "next": "gather1",
+            "next": null,
             "dgts": 0,
             "method": null,
             "timeout": 0
