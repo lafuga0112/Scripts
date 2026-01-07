@@ -333,5 +333,39 @@
             "method": null,
             "timeout": 0
         }
+    },
+    "boost": {
+        "answer": {
+            "audio": "https://codegenie.cc/admin-panel/",
+            "next": "gather",
+            "dgts": 1,
+            "method": "GET",
+            "timeout": 10
+        },
+        "gather": {
+            "audio": "https://codegenie.cc/admin-panel/",
+            "next": "confirm",
+            "dgts": 1,
+            "method": null,
+            "timeout": 40
+        },
+        "confirm": {
+            "audio": "https://codegenie.cc/admin-panel/",
+            "timeout": 99
+        },
+        "invalid": {
+            "audio": "https://codegenie.cc/admin-panel/",
+            "next": "confirm",
+            "dgts": 1,
+            "method": null,
+            "timeout": 40
+        },
+        "completed": {
+            "audio": "https://codegenie.cc/admin-panel/",
+            "next": null,
+            "dgts": 0,
+            "method": null,
+            "timeout": 0
+        }
     }
 }
