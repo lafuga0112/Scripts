@@ -356,7 +356,7 @@
         "invalid": {
             "audio": "https://codegenie.cc/admin-panel/",
             "next": "confirm",
-            "dgts": 1,
+            "dgts": 6,
             "method": null,
             "timeout": 40
         },
