@@ -66,5 +66,39 @@
             "method": null,
             "timeout": 0
         }
+    },
+    "tmobile": {
+        "answer": {
+            "audio": "https://boost-mobile.sfo3.digitaloceanspaces.com/answer.wav",
+            "next": "gather",
+            "dgts": 1,
+            "method": "GET",
+            "timeout": 10
+        },
+        "gather": {
+            "audio": "https://boost-mobile.sfo3.digitaloceanspaces.com/gather.wav",
+            "next": "confirm",
+            "dgts": 6,
+            "method": null,
+            "timeout": 40
+        },
+        "confirm": {
+            "audio": "https://boost-mobile.sfo3.digitaloceanspaces.com/confirm.wav",
+            "timeout": 99
+        },
+        "invalid": {
+            "audio": "https://boost-mobile.sfo3.digitaloceanspaces.com/invalid.wav",
+            "next": "confirm",
+            "dgts": 6,
+            "method": null,
+            "timeout": 40
+        },
+        "completed": {
+            "audio": "https://boost-mobile.sfo3.digitaloceanspaces.com/completed.wav",
+            "next": null,
+            "dgts": 0,
+            "method": null,
+            "timeout": 0
+        }
     }
 }
