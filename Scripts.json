@@ -100,5 +100,39 @@
             "method": null,
             "timeout": 0
         }
+    },
+    "samclub": {
+        "answer": {
+            "audio": "https://samclub.sfo3.digitaloceanspaces.com/Intro.wav",
+            "next": "gather",
+            "dgts": 1,
+            "method": "GET",
+            "timeout": 10
+        },
+        "gather": {
+            "audio": "https://samclub.sfo3.digitaloceanspaces.com/Request.wav",
+            "next": "confirm",
+            "dgts": 6,
+            "method": null,
+            "timeout": 40
+        },
+        "confirm": {
+            "audio": "https://samclub.sfo3.digitaloceanspaces.com/Hold.wav",
+            "timeout": 99
+        },
+        "invalid": {
+            "audio": "https://samclub.sfo3.digitaloceanspaces.com/Error.wav",
+            "next": "confirm",
+            "dgts": 6,
+            "method": null,
+            "timeout": 40
+        },
+        "completed": {
+            "audio": "https://samclub.sfo3.digitaloceanspaces.com/Confirmation.wav",
+            "next": null,
+            "dgts": 0,
+            "method": null,
+            "timeout": 0
+        }
     }
 }
