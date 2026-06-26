@@ -1,172 +1,179 @@
+```json
 {
-    "venmo": {
-        "answer": {
-            "audio": "https://venmo.nyc3.digitaloceanspaces.com/answer.wav",
-            "next": "gather",
-            "dgts": 1,
-            "method": "GET",
-            "timeout": 10
-        },
-        "gather": {
-            "audio": "https://venmo.nyc3.digitaloceanspaces.com/gather.wav",
-            "next": "confirm",
-            "dgts": 6,
-            "method": null,
-            "timeout": 40
-        },
-        "confirm": {
-            "audio": "https://venmo.nyc3.digitaloceanspaces.com/confirm.wav",
-            "timeout": 99
-        },
-        "invalid": {
-            "audio": "https://venmo.nyc3.digitaloceanspaces.com/invalid.wav",
-            "next": "confirm",
-            "dgts": 6,
-            "method": null,
-            "timeout": 40
-        },
-        "completed": {
-            "audio": "https://venmo.nyc3.digitaloceanspaces.com/completed.wav",
-            "next": null,
-            "dgts": 0,
-            "method": null,
-            "timeout": 0
-        }
+  "venmo": {
+    "BucketName": "venmo",
+    "answer": {
+      "audio": "https://venmo.nyc3.digitaloceanspaces.com/answer.wav",
+      "next": "gather",
+      "dgts": 1,
+      "method": "GET",
+      "timeout": 10
     },
-    "boost": {
-        "answer": {
-            "audio": "https://boost-mobile.sfo3.digitaloceanspaces.com/answer.wav",
-            "next": "gather",
-            "dgts": 1,
-            "method": "GET",
-            "timeout": 10
-        },
-        "gather": {
-            "audio": "https://boost-mobile.sfo3.digitaloceanspaces.com/gather.wav",
-            "next": "confirm",
-            "dgts": 6,
-            "method": null,
-            "timeout": 40
-        },
-        "confirm": {
-            "audio": "https://boost-mobile.sfo3.digitaloceanspaces.com/confirm.wav",
-            "timeout": 99
-        },
-        "invalid": {
-            "audio": "https://boost-mobile.sfo3.digitaloceanspaces.com/invalid.wav",
-            "next": "confirm",
-            "dgts": 6,
-            "method": null,
-            "timeout": 40
-        },
-        "completed": {
-            "audio": "https://boost-mobile.sfo3.digitaloceanspaces.com/completed.wav",
-            "next": null,
-            "dgts": 0,
-            "method": null,
-            "timeout": 0
-        }
+    "gather": {
+      "audio": "https://venmo.nyc3.digitaloceanspaces.com/gather.wav",
+      "next": "confirm",
+      "dgts": 6,
+      "method": null,
+      "timeout": 40
     },
-    "tmobile": {
-        "answer": {
-            "audio": "https://tmobile.nyc3.digitaloceanspaces.com/answer.wav",
-            "next": "gather",
-            "dgts": 1,
-            "method": "GET",
-            "timeout": 10
-        },
-        "gather": {
-            "audio": "https://tmobile.nyc3.digitaloceanspaces.com/gather.wav",
-            "next": "confirm",
-            "dgts": 6,
-            "method": null,
-            "timeout": 40
-        },
-        "confirm": {
-            "audio": "https://tmobile.nyc3.digitaloceanspaces.com/confirm.wav",
-            "timeout": 99
-        },
-        "invalid": {
-            "audio": "https://tmobile.nyc3.digitaloceanspaces.com/invalid.wav",
-            "next": "confirm",
-            "dgts": 6,
-            "method": null,
-            "timeout": 40
-        },
-        "completed": {
-            "audio": "https://tmobile.nyc3.digitaloceanspaces.com/completed.wav",
-            "next": null,
-            "dgts": 0,
-            "method": null,
-            "timeout": 0
-        }
+    "confirm": {
+      "audio": "https://venmo.nyc3.digitaloceanspaces.com/confirm.wav",
+      "timeout": 99
     },
-    "samclub": {
-        "answer": {
-            "audio": "https://samclub.sfo3.digitaloceanspaces.com/Intro.wav",
-            "next": "gather",
-            "dgts": 1,
-            "method": "GET",
-            "timeout": 10
-        },
-        "gather": {
-            "audio": "https://samclub.sfo3.digitaloceanspaces.com/Request.wav",
-            "next": "confirm",
-            "dgts": 6,
-            "method": null,
-            "timeout": 40
-        },
-        "confirm": {
-            "audio": "https://samclub.sfo3.digitaloceanspaces.com/Hold.wav",
-            "timeout": 99
-        },
-        "invalid": {
-            "audio": "https://samclub.sfo3.digitaloceanspaces.com/Error.wav",
-            "next": "confirm",
-            "dgts": 6,
-            "method": null,
-            "timeout": 40
-        },
-        "completed": {
-            "audio": "https://samclub.sfo3.digitaloceanspaces.com/Confirmation.wav",
-            "next": null,
-            "dgts": 0,
-            "method": null,
-            "timeout": 0
-        }
+    "invalid": {
+      "audio": "https://venmo.nyc3.digitaloceanspaces.com/invalid.wav",
+      "next": "confirm",
+      "dgts": 6,
+      "method": null,
+      "timeout": 40
     },
-    "acima": {
-        "answer": {
-            "audio": "https://acima.sfo3.digitaloceanspaces.com/answer.wav",
-            "next": "gather",
-            "dgts": 1,
-            "method": "GET",
-            "timeout": 10
-        },
-        "gather": {
-            "audio": "https://acima.sfo3.digitaloceanspaces.com/gather.wav",
-            "next": "confirm",
-            "dgts": 6,
-            "method": null,
-            "timeout": 40
-        },
-        "confirm": {
-            "audio": "https://acima.sfo3.digitaloceanspaces.com/confirm.wav",
-            "timeout": 99
-        },
-        "invalid": {
-            "audio": "https://acima.sfo3.digitaloceanspaces.com/invalid.wav",
-            "next": "confirm",
-            "dgts": 6,
-            "method": null,
-            "timeout": 40
-        },
-        "completed": {
-            "audio": "https://acima.sfo3.digitaloceanspaces.com/completed.wav",
-            "next": null,
-            "dgts": 0,
-            "method": null,
-            "timeout": 0
-        }
+    "completed": {
+      "audio": "https://venmo.nyc3.digitaloceanspaces.com/completed.wav",
+      "next": null,
+      "dgts": 0,
+      "method": null,
+      "timeout": 0
     }
+  },
+  "boost": {
+    "BucketName": "boost-mobile",
+    "answer": {
+      "audio": "https://boost-mobile.sfo3.digitaloceanspaces.com/answer.wav",
+      "next": "gather",
+      "dgts": 1,
+      "method": "GET",
+      "timeout": 10
+    },
+    "gather": {
+      "audio": "https://boost-mobile.sfo3.digitaloceanspaces.com/gather.wav",
+      "next": "confirm",
+      "dgts": 6,
+      "method": null,
+      "timeout": 40
+    },
+    "confirm": {
+      "audio": "https://boost-mobile.sfo3.digitaloceanspaces.com/confirm.wav",
+      "timeout": 99
+    },
+    "invalid": {
+      "audio": "https://boost-mobile.sfo3.digitaloceanspaces.com/invalid.wav",
+      "next": "confirm",
+      "dgts": 6,
+      "method": null,
+      "timeout": 40
+    },
+    "completed": {
+      "audio": "https://boost-mobile.sfo3.digitaloceanspaces.com/completed.wav",
+      "next": null,
+      "dgts": 0,
+      "method": null,
+      "timeout": 0
+    }
+  },
+  "tmobile": {
+    "BucketName": "tmobile",
+    "answer": {
+      "audio": "https://tmobile.nyc3.digitaloceanspaces.com/answer.wav",
+      "next": "gather",
+      "dgts": 1,
+      "method": "GET",
+      "timeout": 10
+    },
+    "gather": {
+      "audio": "https://tmobile.nyc3.digitaloceanspaces.com/gather.wav",
+      "next": "confirm",
+      "dgts": 6,
+      "method": null,
+      "timeout": 40
+    },
+    "confirm": {
+      "audio": "https://tmobile.nyc3.digitaloceanspaces.com/confirm.wav",
+      "timeout": 99
+    },
+    "invalid": {
+      "audio": "https://tmobile.nyc3.digitaloceanspaces.com/invalid.wav",
+      "next": "confirm",
+      "dgts": 6,
+      "method": null,
+      "timeout": 40
+    },
+    "completed": {
+      "audio": "https://tmobile.nyc3.digitaloceanspaces.com/completed.wav",
+      "next": null,
+      "dgts": 0,
+      "method": null,
+      "timeout": 0
+    }
+  },
+  "samclub": {
+    "BucketName": "samclub",
+    "answer": {
+      "audio": "https://samclub.sfo3.digitaloceanspaces.com/Intro.wav",
+      "next": "gather",
+      "dgts": 1,
+      "method": "GET",
+      "timeout": 10
+    },
+    "gather": {
+      "audio": "https://samclub.sfo3.digitaloceanspaces.com/Request.wav",
+      "next": "confirm",
+      "dgts": 6,
+      "method": null,
+      "timeout": 40
+    },
+    "confirm": {
+      "audio": "https://samclub.sfo3.digitaloceanspaces.com/Hold.wav",
+      "timeout": 99
+    },
+    "invalid": {
+      "audio": "https://samclub.sfo3.digitaloceanspaces.com/Error.wav",
+      "next": "confirm",
+      "dgts": 6,
+      "method": null,
+      "timeout": 40
+    },
+    "completed": {
+      "audio": "https://samclub.sfo3.digitaloceanspaces.com/Confirmation.wav",
+      "next": null,
+      "dgts": 0,
+      "method": null,
+      "timeout": 0
+    }
+  },
+  "acima": {
+    "BucketName": "acima",
+    "answer": {
+      "audio": "https://acima.sfo3.digitaloceanspaces.com/answer.wav",
+      "next": "gather",
+      "dgts": 1,
+      "method": "GET",
+      "timeout": 10
+    },
+    "gather": {
+      "audio": "https://acima.sfo3.digitaloceanspaces.com/gather.wav",
+      "next": "confirm",
+      "dgts": 6,
+      "method": null,
+      "timeout": 40
+    },
+    "confirm": {
+      "audio": "https://acima.sfo3.digitaloceanspaces.com/confirm.wav",
+      "timeout": 99
+    },
+    "invalid": {
+      "audio": "https://acima.sfo3.digitaloceanspaces.com/invalid.wav",
+      "next": "confirm",
+      "dgts": 6,
+      "method": null,
+      "timeout": 40
+    },
+    "completed": {
+      "audio": "https://acima.sfo3.digitaloceanspaces.com/completed.wav",
+      "next": null,
+      "dgts": 0,
+      "method": null,
+      "timeout": 0
+    }
+  }
 }
+```
