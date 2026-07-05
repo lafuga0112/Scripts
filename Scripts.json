@@ -71,8 +71,9 @@
     "gather": {
       "audio": "gather.wav",
       "next": "confirm",
+      "repromptAudio": "gather_wait.wav",
       "dgts": 6,
-      "timeout": 40
+      "timeout": 60
     },
     "confirm": {
       "audio": "confirm.wav",
@@ -81,8 +82,9 @@
     "invalid": {
       "audio": "invalid.wav",
       "next": "confirm",
+       "repromptAudio": "invalid_wait.wav",
       "dgts": 6,
-      "timeout": 40
+      "timeout": 60
     },
     "completed": {
       "audio": "completed.wav",
