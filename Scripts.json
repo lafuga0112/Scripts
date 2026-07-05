@@ -40,38 +40,8 @@
     },
     "gather": {
       "audio": "gather.wav",
-      "next": "confirm",
-      "dgts": 6,
-      "timeout": 40
-    },
-    "confirm": {
-      "audio": "confirm.wav",
-      "timeout": 99
-    },
-    "invalid": {
-      "audio": "invalid.wav",
-      "next": "confirm",
-      "dgts": 6,
-      "timeout": 40
-    },
-    "completed": {
-      "audio": "completed.wav",
-      "timeout": 0
-    }
-  },
-  "tmobile": {
-    "BucketName": "tmobile",
-    "Region": "nyc3",
-    "answer": {
-      "audio": "answer.wav",
-      "next": "gather",
-      "dgts": 1,
-      "timeout": 10
-    },
-    "gather": {
-      "audio": "gather.wav",
-      "next": "confirm",
       "repromptAudio": "gather_wait.wav",
+      "next": "confirm",
       "dgts": 6,
       "timeout": 60
     },
@@ -81,8 +51,8 @@
     },
     "invalid": {
       "audio": "invalid.wav",
+      "repromptAudio": "invalid_wait.wav",
       "next": "confirm",
-       "repromptAudio": "invalid_wait.wav",
       "dgts": 6,
       "timeout": 60
     },
